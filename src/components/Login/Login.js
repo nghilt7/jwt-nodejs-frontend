@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./login.scss";
 
 const Login = () => {
@@ -26,15 +28,15 @@ const Login = () => {
             />
             <button className="btn btn-primary py-2">Login</button>
             <span className="text-center">
-              <a className="forgot-password" href="#">
+              <Link className="forgot-password" to="#">
                 Forgot your password?
-              </a>
+              </Link>
             </span>
             <hr />
             <div className="text-center">
-              <button className="btn btn-success py-2">
+              <Link to="/register" className="btn btn-success py-2">
                 Create new account
-              </button>
+              </Link>
             </div>
           </div>
         </div>
